@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyasPay"
+            tools:targetApi="31">
+        <activity
+                android:name=".MainActivity"
+                android:exported="true"
+                android:label="@string/app_name"
+                android:theme="@style/Theme.MyasPay.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.app.lib_name"
+                    android:value=""/>
+        </activity>
+
+        <activity android:name="com.example.myaspay.TransferActivity"
+                  android:theme="@style/AppTheme"
+                  android:label=""/>
+
+        <activity android:name="com.example.myaspay.TransferIBAN"
+                  android:theme="@style/AppTheme"
+                  android:label=""/>
+
+        <activity android:name="com.example.myaspay.ShowData"
+                  android:label="Show Data"/>
+
+        <activity android:name="com.example.myaspay.TransactionHistory"
+                  android:label="Transaction History"/>
+
+        <activity android:name="com.example.myaspay.RoundUp"
+                  android:label="Round Up"/>
+
+        <activity android:name="com.example.myaspay.CashWithdrawal"
+                  android:label="Cash Withdrawal"/>
+
+        <activity android:name="com.example.myaspay.CardSettings"
+                  android:label="Card Settings"/>
+
+        <activity android:name="com.example.myaspay.Send"
+                  android:theme="@style/AppTheme"
+                  android:label="">
+        </activity>
+
+
+        <activity android:name="com.example.myaspay.Ask"
+                  android:theme="@style/AppTheme"
+                  android:label=""/>
+
+        <activity android:name="com.example.myaspay.ShareTheCost"
+                  android:theme="@style/AppTheme"
+                  android:label=""/>
+
+        <activity android:name="com.example.myaspay.AddNumberForTransfer"
+                  android:theme="@style/AppTheme"
+                  android:label=""/>
+
+    </application>
+
+</manifest>

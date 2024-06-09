@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:id="@+id/coordinatorLayout">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:theme="@style/Theme.MyasPay.AppBarOverlay"
+            android:id="@+id/appBarLayout" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="401dp"
+            android:layout_height="204dp"
+            android:padding="20dp"
+            app:srcCompat="@drawable/card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:contentDescription="Card iamge"
+    />
+
+    <Button
+            android:id="@+id/seeBalance"
+            android:layout_width="147dp"
+            android:layout_height="64dp"
+            android:text="See Balance"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+    />
+
+    <Button
+            android:id="@+id/transfer"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:text="Transfer"
+            android:layout_marginTop="320dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+
+    <Button
+            android:id="@+id/transfer_IBAN"
+            android:layout_height="70dp"
+            android:layout_width="112dp"
+            android:text="Transfer through IBAN"
+            android:layout_marginTop="320dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/transfer"
+            android:layout_marginStart="17dp"/>
+
+    <Button
+            android:text="Show data"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:id="@+id/show_data"
+            android:layout_marginTop="320dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/transfer_IBAN"
+            android:layout_marginStart="22dp"/>
+
+    <Button
+            android:text="Transaction history"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:id="@+id/transaction_history"
+            android:layout_marginTop="100dp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/transfer"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+    />
+    <Button
+            android:text="Round Up"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:id="@+id/round_up"
+            android:layout_marginTop="100dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/transfer_IBAN"
+            app:layout_constraintStart_toEndOf="@+id/transaction_history"
+            android:layout_marginStart="17dp"/>
+
+    <Button
+            android:text="Cash withdrawal"
+            android:layout_width="112dp"
+            android:layout_height="66dp"
+            android:id="@+id/cash_withdrawal"
+            android:layout_marginTop="100dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/show_data"
+            app:layout_constraintStart_toEndOf="@+id/round_up"
+            android:layout_marginStart="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+    <Button
+            android:text="Card Settings"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:id="@+id/card_settings"
+            android:layout_marginTop="100dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/transaction_history"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+    />
+
+    <Button
+            android:text="More..."
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:id="@+id/da"
+            android:layout_marginTop="100dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="@+id/round_up"
+            app:layout_constraintStart_toEndOf="@+id/card_settings"
+            android:layout_marginStart="17dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
